@@ -1,0 +1,10 @@
+#map {
+  background: transparent;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+}
