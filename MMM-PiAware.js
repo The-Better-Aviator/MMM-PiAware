@@ -4,6 +4,7 @@ Module.register('MMM-PiAware', {
     piAwareAddress: null,
     showLocation: true,
     size: 500,
+    targetSize: 10,
     rangeRings: [50, 100, 150, 200, 250, 300],
     showIdBlock: true,
     useFade: true,
@@ -109,7 +110,10 @@ Module.register('MMM-PiAware', {
   },
   drawTargets() {
     this.aircraftGroup.clearLayers();
-    let targetDot = L.divIcon({ className: 'dot' });
+    let targetDot = L.divIcon({
+      className: 'dot',
+      iconSize: [this.config.targetSize, this.config.targetSize],
+    });
     let color = '#999999';
     let tooltipAltitude = '';
     let tooltipSpeed = '';

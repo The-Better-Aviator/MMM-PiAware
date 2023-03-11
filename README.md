@@ -25,6 +25,7 @@ Add the following to your `/config/config.js` file:
         // The following settings are optional, and depict the default values:
         showLocation: true,
         size: 500,
+        targetSize: 10,
         rangeRings: [50, 100, 150, 200, 250, 300],
         showIdBlock: true,
         useFade: true,
@@ -42,6 +43,7 @@ Add the following to your `/config/config.js` file:
 | piAwareAddress | Yes                                           | String  | The IP Address of your local network PiAware instance (see [PiAware IP Address](#piaware-ip-address) for more detail).                                                                                       |
 | showLocation   | No (Default: `true`)                          | Bool    | Adds a small circle at your feeder location on the map.                                                                                                                                                      |
 | size           | No (Default: `500`)                           | Integer | The size of the map container in pixels. **NOTE:** MagicMirror sizes components depending on what else you have installed. You may have to play with this value and/or the range to get things looking nice. |
+| targetSize     | No (Default: `10`)                            | Integer | The size of the target on the map in pixels.                                                                                                                                                                 |
 | rangeRings     | No (Default: `[50, 100, 150, 200, 250, 300]`) | Array   | Adds a range ring at each integer value in the array. (see [Range Rings](#range-rings) for more detail)                                                                                                      |
 | showIdBlock    | No (Default: `true`)                          | Bool    | Shows the aircraft identifier (flight/tail number), and allows the display of altitude and speed (options below).                                                                                            |
 | useFade        | No (Default: `true`)                          | Bool    | Causes the ID Block to dim as the altitude decreases (as in example image).                                                                                                                                  |
